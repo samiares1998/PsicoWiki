@@ -3,500 +3,179 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Wiki sobre riesgos psicosociales en el entorno laboral." />
     <title>PsicoWiki | Riesgos Psicosociales en el Entorno Laboral</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
         <span class="brand-mark">PW</span>
         <span>PsicoWiki</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
       <nav class="top-nav" aria-label="Navegacion principal">
-        <a href="#riesgos">Riesgos</a>
-        <a href="#recursos">Recursos</a>
+        <a href="#temas">Temas</a>
+        <a href="#como-usar">Como usar</a>
         <a href="#bibliografia">Bibliografia</a>
       </nav>
     </header>
 
-    <aside class="side-nav" aria-label="Indice de contenidos">
-      <p>Indice</p>
-      <a href="#inicio">Inicio</a>
-      <a href="#mobbing">Mobbing</a>
-      <a href="#burnout">Burnout</a>
-      <a href="#duelo">Duelo organizacional</a>
-      <a href="#doble-presencia">Doble presencia</a>
-      <a href="#techo-cristal">Techo de cristal</a>
-      <a href="#presentismo">Presentismo</a>
-      <a href="#boreout">Boreout</a>
-      <a href="#superviviente">Sindrome del superviviente</a>
-      <a href="#tecnoestres">Tecnoestres</a>
-      <a href="#recursos">Recursos generales</a>
-      <a href="#bibliografia">Bibliografia</a>
-    </aside>
-
-    <main>
+    <main class="home-shell">
       <section class="hero" id="inicio">
         <div class="hero-content">
           <p class="eyebrow">Wiki colaborativa</p>
           <h1>Riesgos Psicosociales en el Entorno Laboral</h1>
           <p>
-            Un portal de consulta para comprender, prevenir y gestionar factores psicosociales que
-            afectan la salud, el bienestar y el desempeno de las personas trabajadoras.
+            Un portal para comprender, prevenir y gestionar factores psicosociales que afectan la
+            salud mental, el bienestar y el desempeno de las personas trabajadoras.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#riesgos">Explorar temas</a>
-            <a class="button secondary" href="#recursos">Ver recursos</a>
+            <a class="button primary" href="#temas">Explorar temas</a>
+            <a class="button secondary" href="#bibliografia">Ver fuentes</a>
           </div>
-        </div>
-        <div class="hero-panel" aria-label="Resumen del proyecto">
-          <strong>Objetivo</strong>
-          <p>
-            Reunir definiciones, causas, consecuencias, recomendaciones y recursos multimedia para
-            orientar el actuar organizacional frente a los riesgos psicosociales.
-          </p>
         </div>
       </section>
 
-      <section class="section intro" id="riesgos">
-        <p class="eyebrow">Panorama general</p>
-        <h2>Riesgos psicosociales abordados</h2>
-        <p>
-          Esta wiki organiza nueve temas clave. Cada pagina tematica incluye concepto, causas,
-          consecuencias, prevencion y recursos de consulta.
-        </p>
+      <section class="section intro" id="temas">
+        <p class="eyebrow">Mapa de la wiki</p>
+        <h2>Temas principales</h2>
+        <p>Selecciona un tema para abrir su pagina con definicion, causas, consecuencias, recomendaciones, recursos y referencias.</p>
         <div class="topic-grid">
-          <a href="#mobbing">Mobbing</a>
-          <a href="#burnout">Burnout</a>
-          <a href="#duelo">Duelo organizacional</a>
-          <a href="#doble-presencia">Doble presencia</a>
-          <a href="#techo-cristal">Techo de cristal</a>
-          <a href="#presentismo">Presentismo</a>
-          <a href="#boreout">Boreout</a>
-          <a href="#superviviente">Sindrome del superviviente</a>
-          <a href="#tecnoestres">Tecnoestres</a>
+          <a class="topic-card" href="topics/mobbing.html">
+          <span>Mobbing o acoso laboral</span>
+          <small>Conductas persistentes de hostigamiento, intimidacion o degradacion que afectan la dignidad y la salud de la persona trabajadora.</small>
+        </a>
+<a class="topic-card" href="topics/burnout.html">
+          <span>Burnout o sindrome de desgaste laboral</span>
+          <small>Cronificacion del estres laboral que se expresa en agotamiento fisico, mental y emocional, perdida de interes y deterioro del desempeno.</small>
+        </a>
+<a class="topic-card" href="topics/duelo.html">
+          <span>Duelo organizacional</span>
+          <small>Proceso emocional individual y colectivo frente a perdidas significativas dentro de la organizacion.</small>
+        </a>
+<a class="topic-card" href="topics/doble-presencia.html">
+          <span>Doble presencia</span>
+          <small>Necesidad de responder simultaneamente a las demandas del trabajo remunerado y del ambito domestico-familiar.</small>
+        </a>
+<a class="topic-card" href="topics/techo-cristal.html">
+          <span>Techo de cristal</span>
+          <small>Barreras invisibles que limitan el avance profesional de mujeres y otros grupos subrepresentados hacia posiciones de liderazgo.</small>
+        </a>
+<a class="topic-card" href="topics/presentismo.html">
+          <span>Presentismo laboral</span>
+          <small>Presencia fisica en el trabajo con baja productividad real por enfermedad, agotamiento, desmotivacion o cultura de permanencia.</small>
+        </a>
+<a class="topic-card" href="topics/boreout.html">
+          <span>Boreout o aburrimiento laboral</span>
+          <small>Aburrimiento cronico, infraexigencia y desinteres derivados de tareas poco estimulantes o carentes de sentido.</small>
+        </a>
+<a class="topic-card" href="topics/sindrome-superviviente.html">
+          <span>Sindrome del superviviente</span>
+          <small>Impacto psicologico en quienes permanecen despues de despidos, reducciones de personal o perdidas organizacionales.</small>
+        </a>
+<a class="topic-card" href="topics/tecnoestres.html">
+          <span>Tecnoestres</span>
+          <small>Efectos psicosociales negativos asociados al uso intensivo, complejo o invasivo de tecnologias digitales.</small>
+        </a>
         </div>
       </section>
 
-      <section class="wiki-section" id="mobbing">
-        <div class="section-heading">
-          <p class="eyebrow">Tema 01</p>
-          <h2>Mobbing o acoso laboral</h2>
-        </div>
-        <div class="content-layout">
-          <article>
-            <h3>Definicion y concepto</h3>
-            <p>
-              Conducta de hostigamiento psicologico sostenida en el tiempo dentro del trabajo, que
-              busca intimidar, aislar, humillar o deteriorar la posicion laboral de una persona.
-            </p>
-            <h3>Causas</h3>
-            <ul>
-              <li>Culturas laborales permisivas frente al maltrato.</li>
-              <li>Liderazgos autoritarios o ausencia de protocolos de convivencia.</li>
-              <li>Conflictos no gestionados, discriminacion o abuso de poder.</li>
-            </ul>
-            <h3>Consecuencias</h3>
-            <ul>
-              <li>Ansiedad, depresion, estres cronico y perdida de autoestima.</li>
-              <li>Deterioro del clima laboral, rotacion y ausentismo.</li>
-              <li>Baja productividad y perdida de confianza en la organizacion.</li>
-            </ul>
-            <h3>Prevencion y recomendaciones</h3>
-            <ul>
-              <li>Crear canales confidenciales de reporte y seguimiento.</li>
-              <li>Capacitar a lideres y equipos en trato digno y resolucion de conflictos.</li>
-              <li>Investigar los casos con imparcialidad y proteger a la persona afectada.</li>
-            </ul>
-          </article>
-          <aside class="resources">
-            <h3>Recursos</h3>
-            <p class="pending">Pendiente de ampliar con 5 fuentes externas y un video especifico.</p>
-          </aside>
-        </div>
-      </section>
-
-      <section class="wiki-section" id="burnout">
-        <div class="section-heading">
-          <p class="eyebrow">Tema 02</p>
-          <h2>Burnout o sindrome de desgaste laboral</h2>
-        </div>
-        <div class="content-layout">
-          <article>
-            <h3>Definicion y concepto</h3>
-            <p>
-              Estado de agotamiento fisico, mental y emocional asociado a exigencias laborales
-              cronicas, exceso de carga, presion sostenida y poca recuperacion.
-            </p>
-            <h3>Causas</h3>
-            <ul>
-              <li>Sobrecarga de trabajo y jornadas extensas.</li>
-              <li>Falta de autonomia, reconocimiento o apoyo del equipo.</li>
-              <li>Metas poco realistas y desequilibrio entre vida personal y trabajo.</li>
-            </ul>
-            <h3>Consecuencias</h3>
-            <ul>
-              <li>Cansancio persistente, irritabilidad y desmotivacion.</li>
-              <li>Distanciamiento emocional frente al trabajo.</li>
-              <li>Errores, baja productividad y mayor riesgo de ausentismo.</li>
-            </ul>
-            <h3>Prevencion y recomendaciones</h3>
-            <ul>
-              <li>Revisar cargas laborales, pausas y tiempos de recuperacion.</li>
-              <li>Promover apoyo psicosocial, liderazgo saludable y reconocimiento.</li>
-              <li>Definir prioridades, limites y mecanismos tempranos de alerta.</li>
-            </ul>
-          </article>
-          <aside class="resources">
-            <h3>Recursos</h3>
-            <a href="https://segurossura.com/co/blog/saludables/que-es-el-burnout-o-sindrome-de-desgaste-laboral/" target="_blank" rel="noreferrer">SURA: que es el burnout</a>
-            <div class="video-list">
-              <a class="video-link" href="https://www.youtube.com/watch?v=tTxxhyrco14" target="_blank" rel="noreferrer">Mirar video sobre burnout en YouTube</a>
-              <a class="video-link" href="https://www.youtube.com/watch?v=95ypZUIQ5Gs" target="_blank" rel="noreferrer">Mirar video sobre desgaste laboral en YouTube</a>
-              <a class="video-link" href="https://www.youtube.com/watch?v=nGMA1AmbQr8" target="_blank" rel="noreferrer">Mirar video educativo sobre burnout en YouTube</a>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="wiki-section" id="duelo">
-        <div class="section-heading">
-          <p class="eyebrow">Tema 03</p>
-          <h2>Duelo organizacional</h2>
-        </div>
-        <div class="content-layout">
-          <article>
-            <h3>Definicion y concepto</h3>
-            <p>
-              Proceso emocional individual y colectivo que aparece cuando una organizacion vive
-              perdidas significativas: fallecimientos, despidos, jubilaciones, fusiones o cambios de identidad.
-            </p>
-            <h3>Causas</h3>
-            <ul>
-              <li>Fallecimiento de una persona del equipo.</li>
-              <li>Despidos masivos, reestructuraciones o cierres de area.</li>
-              <li>Salida de lideres clave, fusiones o transformaciones culturales y tecnologicas.</li>
-            </ul>
-            <h3>Consecuencias</h3>
-            <ul>
-              <li>Incredulidad, angustia, miedo y aceptacion resignada.</li>
-              <li>Culpa y desconfianza en quienes permanecen en la organizacion.</li>
-              <li>Frustracion, ausentismo, estres y caida de productividad si se ignora el componente emocional.</li>
-            </ul>
-            <h3>Prevencion y recomendaciones</h3>
-            <ul>
-              <li>Comunicar con transparencia, humanidad y sin tecnicismos frios.</li>
-              <li>Crear rituales de cierre: homenajes, despedidas dignas y reconocimiento del legado.</li>
-              <li>Ofrecer apoyo psicologico, outplacement y espacios para expresar miedos.</li>
-              <li>Honrar la historia organizacional e involucrar embajadores del cambio.</li>
-            </ul>
-          </article>
-          <aside class="resources">
-            <h3>Recursos</h3>
-            <div class="video-list">
-              <a class="video-link" href="https://www.youtube.com/watch?v=VkRK1vF0yjY" target="_blank" rel="noreferrer">Mirar video sobre duelo organizacional en YouTube</a>
-              <a class="video-link" href="https://www.youtube.com/watch?v=88CDFbq3gh8" target="_blank" rel="noreferrer">Mirar video sobre duelo laboral y recursos humanos en YouTube</a>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="wiki-section" id="doble-presencia">
-        <div class="section-heading">
-          <p class="eyebrow">Tema 04</p>
-          <h2>Doble presencia</h2>
-        </div>
-        <div class="content-layout">
-          <article>
-            <h3>Definicion y concepto</h3>
-            <p>
-              Riesgo psicosocial asociado a la exigencia simultanea de responder al trabajo remunerado
-              y a responsabilidades domesticas, familiares o de cuidado.
-            </p>
-            <h3>Causas</h3>
-            <ul>
-              <li>Jornadas rigidas o extensas que dificultan la conciliacion.</li>
-              <li>Distribucion desigual de tareas de cuidado.</li>
-              <li>Falta de politicas organizacionales de apoyo familiar.</li>
-            </ul>
-            <h3>Consecuencias</h3>
-            <ul>
-              <li>Sobrecarga, fatiga y conflicto trabajo-familia.</li>
-              <li>Mayor estres y menor tiempo de descanso.</li>
-              <li>Dificultad para concentrarse y sostener el desempeno.</li>
-            </ul>
-            <h3>Prevencion y recomendaciones</h3>
-            <ul>
-              <li>Flexibilidad horaria y modalidades de trabajo compatibles con la vida familiar.</li>
-              <li>Politicas de corresponsabilidad y apoyo al cuidado.</li>
-              <li>Gestion de cargas con enfoque de equidad.</li>
-            </ul>
-          </article>
-          <aside class="resources">
-            <h3>Recursos</h3>
-            <p class="pending">Pendiente de ampliar con videos, manuales y enlaces externos.</p>
-          </aside>
-        </div>
-      </section>
-
-      <section class="wiki-section" id="techo-cristal">
-        <div class="section-heading">
-          <p class="eyebrow">Tema 05</p>
-          <h2>Techo de cristal</h2>
-        </div>
-        <div class="content-layout">
-          <article>
-            <h3>Definicion y concepto</h3>
-            <p>
-              Metafora que describe barreras invisibles que impiden a mujeres y otros grupos
-              subrepresentados acceder a liderazgo, crecimiento profesional y mejores oportunidades.
-            </p>
-            <h3>Causas</h3>
-            <ul>
-              <li>Sesgos de genero: rendimiento, atribucion, afinidad, maternidad y aprecio.</li>
-              <li>Expectativas sociales de genero y cultura organizacional masculinizada.</li>
-              <li>Brecha salarial, falta de mentoras y modelos a seguir.</li>
-            </ul>
-            <h3>Consecuencias</h3>
-            <ul>
-              <li>Limitacion del desarrollo profesional y perdida de talento.</li>
-              <li>Desigualdad salarial y baja representacion en cargos de decision.</li>
-              <li>Cultura laboral menos inclusiva e innovadora.</li>
-            </ul>
-            <h3>Prevencion y recomendaciones</h3>
-            <ul>
-              <li>Procesos transparentes de promocion, seleccion y evaluacion.</li>
-              <li>Programas de liderazgo inclusivo, mentorias y medicion de brechas.</li>
-              <li>Acciones contra estereotipos y sesgos en decisiones laborales.</li>
-            </ul>
-          </article>
-          <aside class="resources">
-            <h3>Recursos</h3>
-            <a href="https://cienciasdelderecho.com/que-significa-el-termino-techo-de-cristal/" target="_blank" rel="noreferrer">Ciencias del Derecho: significado</a>
-            <a href="https://www.bbc.com/mundo/media-41436954" target="_blank" rel="noreferrer">BBC Mundo: recurso multimedia</a>
-            <a href="https://elordenmundial.com/que-es-techo-cristal/" target="_blank" rel="noreferrer">El Orden Mundial: concepto e historia</a>
-            <a href="https://www.aldeasinfantiles.org.co/noticias/noticias-2023/techo-de-cristal" target="_blank" rel="noreferrer">Aldeas Infantiles: techo de cristal</a>
-            <a href="https://olartemoure.com/rompiendo-el-techo-de-cristal/" target="_blank" rel="noreferrer">OlarteMoure: rompiendo barreras</a>
-            <div class="video-list">
-              <a class="video-link" href="https://www.youtube.com/watch?v=2mkvHl0n3qw" target="_blank" rel="noreferrer">Mirar video sobre techo de cristal en YouTube</a>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="wiki-section" id="presentismo">
-        <div class="section-heading">
-          <p class="eyebrow">Tema 06</p>
-          <h2>Presentismo laboral</h2>
-        </div>
-        <div class="content-layout">
-          <article>
-            <h3>Definicion y concepto</h3>
-            <p>
-              Asistencia al puesto de trabajo con baja productividad, ya sea por enfermedad,
-              agotamiento, desmotivacion o por permanecer mas tiempo del necesario para aparentar compromiso.
-            </p>
-            <h3>Causas</h3>
-            <ul>
-              <li>Modelos empresariales basados en control, autoridad y jerarquia.</li>
-              <li>Jornadas demasiado largas y cultura de “calentar la silla”.</li>
-              <li>Estructuras rigidas y falta de enfoque en resultados.</li>
-            </ul>
-            <h3>Consecuencias</h3>
-            <ul>
-              <li>Baja productividad real pese a la presencia fisica.</li>
-              <li>Deterioro de la salud y del ambiente de trabajo.</li>
-              <li>Impacto negativo en la imagen y eficiencia de la empresa.</li>
-            </ul>
-            <h3>Prevencion y recomendaciones</h3>
-            <ul>
-              <li>Gestionar por objetivos y resultados, no por horas visibles.</li>
-              <li>Promover empresa saludable, descansos y respeto por horarios.</li>
-              <li>Detectar causas de desmotivacion, enfermedad o sobrecarga.</li>
-            </ul>
-          </article>
-          <aside class="resources">
-            <h3>Recursos</h3>
-            <a href="https://www.personio.es/glosario/presentismo-laboral/" target="_blank" rel="noreferrer">Personio: presentismo laboral</a>
-            <a href="https://www.acciopreventiva.com/que-es-presentismo-laboral/" target="_blank" rel="noreferrer">Accion Preventiva: que es presentismo</a>
-            <div class="video-list">
-              <a class="video-link" href="https://www.youtube.com/watch?v=vzImVSJZA3s" target="_blank" rel="noreferrer">Mirar video sobre presentismo laboral en YouTube</a>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="wiki-section" id="boreout">
-        <div class="section-heading">
-          <p class="eyebrow">Tema 07</p>
-          <h2>Boreout o sindrome de aburrimiento laboral</h2>
-        </div>
-        <div class="content-layout">
-          <article>
-            <h3>Definicion y concepto</h3>
-            <p>
-              Sindrome opuesto al burnout, caracterizado por aburrimiento cronico, infraexigencia y
-              desinteres frente a tareas laborales poco retadoras o sin sentido.
-            </p>
-            <h3>Causas</h3>
-            <ul>
-              <li>Falta de planificacion y funciones claras del cargo.</li>
-              <li>Tareas monotonas, repetitivas o por debajo de la cualificacion.</li>
-              <li>Falta de incentivos, reconocimiento, autonomia e innovacion.</li>
-            </ul>
-            <h3>Consecuencias</h3>
-            <ul>
-              <li>Apatia, desgana, duda y perdida de identificacion con el trabajo.</li>
-              <li>Sensacion de estar desaprovechado o poder rendir mas.</li>
-              <li>Insatisfaccion, desmotivacion y deterioro del clima laboral.</li>
-            </ul>
-            <h3>Prevencion y recomendaciones</h3>
-            <ul>
-              <li>Definir roles, responsabilidades y lineas de autoridad claras.</li>
-              <li>Aumentar autonomia, participacion, aprendizaje y reto laboral.</li>
-              <li>Mejorar comunicacion, flexibilidad horaria y recursos de trabajo.</li>
-            </ul>
-          </article>
-          <aside class="resources">
-            <h3>Recursos</h3>
-            <a href="https://feuso.es/images/docs/boletines/FEUSO_SALUD_LABORAL437.pdf" target="_blank" rel="noreferrer">FEUSO: boletin salud laboral</a>
-            <a href="https://ccs.org.co/portfolio/sindrome-boreout-aburrimiento-insatisfaccion-laboral/" target="_blank" rel="noreferrer">CCS: sindrome boreout</a>
-            <a href="https://www.ugt.es/sites/default/files/node_gallery/Galer-a%20Publicaciones/FichasObservatorio%20%28%29%2019.pdf" target="_blank" rel="noreferrer">UGT: ficha observatorio</a>
-          </aside>
-        </div>
-      </section>
-
-      <section class="wiki-section" id="superviviente">
-        <div class="section-heading">
-          <p class="eyebrow">Tema 08</p>
-          <h2>Sindrome del superviviente</h2>
-        </div>
-        <div class="content-layout">
-          <article>
-            <h3>Definicion y concepto</h3>
-            <p>
-              Fenomeno psicologico en el que una persona que permanece despues de una perdida,
-              despido, tragedia o reestructuracion siente culpa, miedo o cuestiona su derecho a seguir adelante.
-            </p>
-            <h3>Causas</h3>
-            <ul>
-              <li>Despidos, recortes o procesos de redundancia en el trabajo.</li>
-              <li>Exposicion a eventos traumaticos donde otras personas resultan afectadas.</li>
-              <li>Necesidad de control y pensamientos sobre lo que se pudo haber hecho diferente.</li>
-            </ul>
-            <h3>Consecuencias</h3>
-            <ul>
-              <li>Culpa persistente, ansiedad, aislamiento y pensamientos rumiantes.</li>
-              <li>Desconfianza, desmotivacion y miedo a futuros despidos.</li>
-              <li>En casos severos, sintomas asociados a estres postraumatico.</li>
-            </ul>
-            <h3>Prevencion y recomendaciones</h3>
-            <ul>
-              <li>Reconocer la culpa y cuestionar ideas irracionales.</li>
-              <li>Favorecer conexion social, apoyo profesional y espacios de dialogo.</li>
-              <li>Comunicar cambios con transparencia y reconstruir confianza organizacional.</li>
-            </ul>
-          </article>
-          <aside class="resources">
-            <h3>Recursos</h3>
-            <a href="https://www.open.edu/openlearn/health-sports-psychology/psychology/workplace-survivor-syndrome" target="_blank" rel="noreferrer">OpenLearn: workplace survivor syndrome</a>
-            <a href="https://www.springhealth.com/blog/workplace-survival-syndrome" target="_blank" rel="noreferrer">Spring Health: survival syndrome</a>
-            <a href="https://www.maz.es/Documents/PublicacionesEnRedes/S%C3%8DNDROME%20DEL%20SUPERVIVIENTE.pdf" target="_blank" rel="noreferrer">MAZ: sindrome del superviviente</a>
-            <a href="https://lattice.com/articles/workplace-survivor-syndrome-what-it-is-and-how-to-cope" target="_blank" rel="noreferrer">Lattice: how to cope</a>
-            <a href="https://www.australianindustrygroup.com.au/resourcecentre/resource-centre-blogs/hr-blogs/Survivor-guilt-how-to-help-employees-who-escape-redundancy/" target="_blank" rel="noreferrer">Australian Industry Group: survivor guilt</a>
-            <a href="https://www.mavenclinic.com/es/post/workplace-survivor-syndrome-6-ways-to-support-employees-retained-after-company-layoffs" target="_blank" rel="noreferrer">Maven Clinic: apoyo tras despidos</a>
-            <div class="video-list">
-              <a class="video-link" href="https://www.youtube.com/watch?v=MyrRXBqULpU" target="_blank" rel="noreferrer">Mirar video sobre culpa del sobreviviente en YouTube</a>
-              <a class="video-link" href="https://www.youtube.com/watch?v=peNnxeMxkF4" target="_blank" rel="noreferrer">Mirar video sobre sindrome del superviviente en YouTube</a>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="wiki-section" id="tecnoestres">
-        <div class="section-heading">
-          <p class="eyebrow">Tema 09</p>
-          <h2>Tecnoestres</h2>
-        </div>
-        <div class="content-layout">
-          <article>
-            <h3>Definicion y concepto</h3>
-            <p>
-              Riesgo psicosocial relacionado con el uso intensivo, complejo o invasivo de tecnologias
-              digitales en el trabajo.
-            </p>
-            <h3>Causas</h3>
-            <ul>
-              <li>Sobrecarga de informacion, hiperconectividad y disponibilidad permanente.</li>
-              <li>Herramientas digitales mal implementadas o sin capacitacion suficiente.</li>
-              <li>Presion por responder de inmediato y dificultad para desconectarse.</li>
-            </ul>
-            <h3>Consecuencias</h3>
-            <ul>
-              <li>Fatiga mental, ansiedad tecnologica y dificultad de concentracion.</li>
-              <li>Conflicto entre vida laboral y personal por conectividad constante.</li>
-              <li>Errores, agotamiento y rechazo a nuevas herramientas.</li>
-            </ul>
-            <h3>Prevencion y recomendaciones</h3>
-            <ul>
-              <li>Definir normas de desconexion digital y tiempos de respuesta.</li>
-              <li>Capacitar en herramientas, seguridad y gestion de informacion.</li>
-              <li>Simplificar procesos digitales y evaluar la carga tecnologica real.</li>
-            </ul>
-          </article>
-          <aside class="resources">
-            <h3>Recursos</h3>
-            <p class="pending">Pendiente de ampliar con fuentes y recursos multimedia especificos.</p>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section" id="recursos">
-        <p class="eyebrow">Consulta rapida</p>
-        <h2>Recursos generales</h2>
+      <section class="section" id="como-usar">
+        <p class="eyebrow">Navegacion</p>
+        <h2>Como usar esta wiki</h2>
         <div class="resource-grid">
-          <div>
-            <h3>Videos</h3>
-            <p>Elementos multimedia integrados en cada tema cuando el material base los incluye.</p>
-          </div>
-          <div>
-            <h3>Enlaces externos</h3>
-            <p>Fuentes organizadas por tema para ampliar la comprension y orientar acciones preventivas.</p>
-          </div>
-          <div>
-            <h3>Material pendiente</h3>
-            <p>Completar cinco fuentes por cada tema: manuales, instructivos, cartillas o videos.</p>
-          </div>
+          <div><h3>1. Elige un tema</h3><p>Cada tarjeta abre una pagina independiente con contenido completo.</p></div>
+          <div><h3>2. Revisa recursos</h3><p>Los videos y documentos se abren como enlaces externos para evitar errores de reproductor.</p></div>
+          <div><h3>3. Consulta fuentes</h3><p>La bibliografia general reune las referencias importadas desde el archivo base.</p></div>
         </div>
       </section>
 
       <section class="section bibliography" id="bibliografia">
         <p class="eyebrow">Fuentes de consulta</p>
-        <h2>Bibliografia y enlaces usados</h2>
-        <ul>
-          <li><a href="https://segurossura.com/co/blog/saludables/que-es-el-burnout-o-sindrome-de-desgaste-laboral/" target="_blank" rel="noreferrer">SURA: Burnout o sindrome de desgaste laboral</a></li>
-          <li><a href="https://cienciasdelderecho.com/que-significa-el-termino-techo-de-cristal/" target="_blank" rel="noreferrer">Ciencias del Derecho: techo de cristal</a></li>
-          <li><a href="https://www.bbc.com/mundo/media-41436954" target="_blank" rel="noreferrer">BBC Mundo: recurso multimedia sobre techo de cristal</a></li>
-          <li><a href="https://elordenmundial.com/que-es-techo-cristal/" target="_blank" rel="noreferrer">El Orden Mundial: que es el techo de cristal</a></li>
-          <li><a href="https://www.aldeasinfantiles.org.co/noticias/noticias-2023/techo-de-cristal" target="_blank" rel="noreferrer">Aldeas Infantiles SOS Colombia: techo de cristal</a></li>
-          <li><a href="https://olartemoure.com/rompiendo-el-techo-de-cristal/" target="_blank" rel="noreferrer">OlarteMoure: rompiendo el techo de cristal</a></li>
-          <li><a href="https://www.personio.es/glosario/presentismo-laboral/" target="_blank" rel="noreferrer">Personio: presentismo laboral</a></li>
-          <li><a href="https://www.acciopreventiva.com/que-es-presentismo-laboral/" target="_blank" rel="noreferrer">Accion Preventiva: que es presentismo laboral</a></li>
-          <li><a href="https://feuso.es/images/docs/boletines/FEUSO_SALUD_LABORAL437.pdf" target="_blank" rel="noreferrer">FEUSO: sindrome Boreout</a></li>
-          <li><a href="https://ccs.org.co/portfolio/sindrome-boreout-aburrimiento-insatisfaccion-laboral/" target="_blank" rel="noreferrer">Consejo Colombiano de Seguridad: Boreout</a></li>
-          <li><a href="https://www.ugt.es/sites/default/files/node_gallery/Galer-a%20Publicaciones/FichasObservatorio%20%28%29%2019.pdf" target="_blank" rel="noreferrer">UGT: Boreout</a></li>
-          <li><a href="https://www.open.edu/openlearn/health-sports-psychology/psychology/workplace-survivor-syndrome" target="_blank" rel="noreferrer">OpenLearn: Workplace survivor syndrome</a></li>
-          <li><a href="https://www.springhealth.com/blog/workplace-survival-syndrome" target="_blank" rel="noreferrer">Spring Health: Workplace survival syndrome</a></li>
-          <li><a href="https://www.maz.es/Documents/PublicacionesEnRedes/S%C3%8DNDROME%20DEL%20SUPERVIVIENTE.pdf" target="_blank" rel="noreferrer">MAZ: Sindrome del superviviente</a></li>
-          <li><a href="https://lattice.com/articles/workplace-survivor-syndrome-what-it-is-and-how-to-cope" target="_blank" rel="noreferrer">Lattice: Workplace survivor syndrome</a></li>
-          <li><a href="https://www.australianindustrygroup.com.au/resourcecentre/resource-centre-blogs/hr-blogs/Survivor-guilt-how-to-help-employees-who-escape-redundancy/" target="_blank" rel="noreferrer">Australian Industry Group: Survivor guilt</a></li>
-          <li><a href="https://www.mavenclinic.com/es/post/workplace-survivor-syndrome-6-ways-to-support-employees-retained-after-company-layoffs" target="_blank" rel="noreferrer">Maven Clinic: Workplace survivor syndrome</a></li>
-        </ul>
+        <h2>Bibliografia general</h2>
+        <ul><li>Alcaldía Mayor de Bogotá. (2018, octubre). Acoso laboral &amp; sexual laboral: Protocolo de prevención y atención [Folleto]. Secretaría General; Secretaría Distrital de la Mujer. <a href="https://www.sdmujer.gov.co/sites/default/files/2021-11/documentos/Protocolo%20de%20prevenci%C3%B3n%20y%20atenci%C3%B3n%20de%20acoso%20laboral%20y%20sexual%20laboral.pdf" target="_blank" rel="noreferrer">https://www.sdmujer.gov.co/sites/default/files/2021-11/documentos/Protocolo%20de%20prevenci%C3%B3n%20y%20atenci%C3%B3n%20de%20acoso%20laboral%20y%20sexual%20laboral.pdf</a></li>
+<li>Canal Institucional. (2024, 18 de septiembre). ¿Cómo denunciar el acoso laboral en Colombia? [Video]. YouTube. <a href="https://www.youtube.com/watch?v=hwbTE3doXtQ" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=hwbTE3doXtQ</a></li>
+<li>Corte Suprema de Justicia de Colombia. (2022, 17 de noviembre). El acoso laboral que desencadenó una enfermedad mental [Video]. YouTube. <a href="https://www.youtube.com/watch?v=yL-hXDy6vSE" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=yL-hXDy6vSE</a></li>
+<li>Ecopetrol. (2022). Prevengamos el acoso laboral en Ecopetrol [Folleto]. Gerencia de Comunicaciones Corporativas. <a href="https://saaeuecpprdpecp.blob.core.windows.net/web/esp/cargas/cartilla-acoso-laboral%20Actualizada.pdf" target="_blank" rel="noreferrer">https://saaeuecpprdpecp.blob.core.windows.net/web/esp/cargas/cartilla-acoso-laboral%20Actualizada.pdf</a></li>
+<li>Margiotta, M. (2026, 27 de marzo). Mobbing o acoso laboral: cómo reconocerlo y afrontarlo. Unobravo. <a href="https://www.unobravo.com/es/blog/mobbing-acoso-laboral" target="_blank" rel="noreferrer">https://www.unobravo.com/es/blog/mobbing-acoso-laboral</a></li>
+<li>Ministerio de Educación Pública. (2021). Guía técnica para la prevención y atención del acoso laboral o “mobbing” en el lugar de trabajo. <a href="https://www.mep.go.cr/sites/default/files/2023-04/guia-prevencion-atencion-acoso-laboral.pdf" target="_blank" rel="noreferrer">https://www.mep.go.cr/sites/default/files/2023-04/guia-prevencion-atencion-acoso-laboral.pdf</a></li>
+<li>Ministerio del Trabajo de Colombia. (2023, 23 de mayo). ¿Eres víctima de acoso laboral? [Video]. YouTube. <a href="https://www.youtube.com/watch?v=oDQDiVwSJA8" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=oDQDiVwSJA8</a></li>
+<li>Positiva Compañía de Seguros. (2022). Lo que debo saber sobre acoso laboral y acoso sexual laboral en mi entorno de trabajo [Folleto]. <a href="https://posipedia.com.co/wp-content/uploads/2022/10/CARTILLA-ACOSO-LABORAL-TRABAJADORES-1.pdf" target="_blank" rel="noreferrer">https://posipedia.com.co/wp-content/uploads/2022/10/CARTILLA-ACOSO-LABORAL-TRABAJADORES-1.pdf</a></li>
+<li>Procuraduría General de la Nación. (2023, septiembre). Protocolo para la prevención, atención y seguimiento del acoso laboral en la Procuraduría General de la Nación. <a href="https://www.procuraduria.gov.co/Documents/septiembre%202023/Protocolo%20para%20la%20prevenci%C3%B3n,%20atenci%C3%B3n%20y%20seguimiento%20del%20acoso%20laboral%20en%20la%20Procuradur%C3%ADa%20General%20de%20la%20Naci%C3%B3n.pdf" target="_blank" rel="noreferrer">https://www.procuraduria.gov.co/Documents/septiembre%202023/Protocolo%20para%20la%20prevenci%C3%B3n,%20atenci%C3%B3n%20y%20seguimiento%20del%20acoso%20laboral%20en%20la%20Procuradur%C3%ADa%20General%20de%20la%20Naci%C3%B3n.pdf</a></li>
+<li>Superintendencia del Subsidio Familiar. (2020, diciembre). Cartilla para prevenir el acoso laboral y sexual [Folleto]. Grupo de Gestión del Talento Humano. <a href="https://www.ssf.gov.co/documents/20127/723389/CARTILLA+PARA+PREVENIR+EL+ACOSO+LABORAL+Y+SEXUAL+rev+12232020.pdf/50f06d53-eb4b-f2b9-77b4-a571303b8d43" target="_blank" rel="noreferrer">https://www.ssf.gov.co/documents/20127/723389/CARTILLA+PARA+PREVENIR+EL+ACOSO+LABORAL+Y+SEXUAL+rev+12232020.pdf/50f06d53-eb4b-f2b9-77b4-a571303b8d43</a></li>
+<li>Universidad del Norte. (s. f.). Cartilla acoso laboral [Folleto]. Unidad de Prácticas Jurídico - Políticas y Servicios a la Comunidad. <a href="https://www.uninorte.edu.co/documents/14439846/14609973/C-19642_AR_EXT_JUR_CUA_ACOSO_LABORAL_press.pdf" target="_blank" rel="noreferrer">https://www.uninorte.edu.co/documents/14439846/14609973/C-19642_AR_EXT_JUR_CUA_ACOSO_LABORAL_press.pdf</a></li>
+<li>Canon, C. (2025, 23 de octubre). ¿Qué es el burnout y cómo debe tratarse en las empresas? Politécnico Grancolombiano. <a href="https://www.poli.edu.co/blog/poliverso/que-es-el-burnout-y-como-debe-tratarse-en-las-empresas" target="_blank" rel="noreferrer">https://www.poli.edu.co/blog/poliverso/que-es-el-burnout-y-como-debe-tratarse-en-las-empresas</a></li>
+<li>Cárdenas Marín, Y., &amp; Ruiz, F. (2020). Guía prevención del burnout [Folleto]. Psírculo Creativo. <a href="https://www.sesst.org/wp-content/uploads/2021/07/guia-prevencion-del-burnout-.pdf" target="_blank" rel="noreferrer">https://www.sesst.org/wp-content/uploads/2021/07/guia-prevencion-del-burnout-.pdf</a></li>
+<li>Martins, J. (2026, 4 de mayo). Síndrome de burnout: Síntomas, fases y prevención. Asana. <a href="https://asana.com/es/resources/what-is-burnout" target="_blank" rel="noreferrer">https://asana.com/es/resources/what-is-burnout</a></li>
+<li>Mayo Clinic. (2025, 30 de septiembre). Agotamiento laboral: Cómo detectarlo y tomar medidas. <a href="https://www.mayoclinic.org/es/healthy-lifestyle/adult-health/in-depth/burnout/art-20046642" target="_blank" rel="noreferrer">https://www.mayoclinic.org/es/healthy-lifestyle/adult-health/in-depth/burnout/art-20046642</a></li>
+<li>Noticias Caracol. (2024, 15 de febrero). Síndrome de burnout: Cómo el trabajo afecta la salud mental y física de los empleados [Video]. YouTube. <a href="https://www.youtube.com/watch?v=nGMA1AmbQr8" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=nGMA1AmbQr8</a></li>
+<li>Popa-Velea, O., Diaconescu, L. V., Mihăilescu, A., Sfetcu, R., Vladescu, C., Galati, G., &amp; Merlo, S. (2021). Manual de burnout: Edición de bolsillo [Manual]. Proyecto Erasmus+. <a href="https://www.infocop.es/pdf/Burnout%20Manual.pdf" target="_blank" rel="noreferrer">https://www.infocop.es/pdf/Burnout%20Manual.pdf</a></li>
+<li>Quirónprevención. (2018, 24 de julio). Síntomas del síndrome de burnout: ¿cómo identificarlo? <a href="https://www.quironprevencion.com/blogs/es/prevenidos/sintomas-sindrome-burnout-identificarlo" target="_blank" rel="noreferrer">https://www.quironprevencion.com/blogs/es/prevenidos/sintomas-sindrome-burnout-identificarlo</a></li>
+<li>Seguros SURA Colombia. (2021, 3 de mayo). ¿Qué es el burnout o síndrome de desgaste laboral? <a href="https://segurossura.com/co/blog/saludables/que-es-el-burnout-o-sindrome-de-desgaste-laboral/" target="_blank" rel="noreferrer">https://segurossura.com/co/blog/saludables/que-es-el-burnout-o-sindrome-de-desgaste-laboral/</a></li>
+<li>Supérate con Psicología. (2021, 15 de marzo). ¿Cómo superar el burnout? [Video]. YouTube. <a href="https://www.youtube.com/watch?v=95ypZUIQ5Gs" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=95ypZUIQ5Gs</a></li>
+<li>Umivale Activa. (2022, 17 de noviembre). Síndrome de burnout en el ámbito laboral [Video]. YouTube. <a href="https://www.youtube.com/watch?v=tTxxhyrco14" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=tTxxhyrco14</a></li>
+<li>APD Colombia. (2023). El duelo y la gestión organizacional. <a href="https://www.apdcolombia.org/el-duelo-y-la-gestion-organizacional/" target="_blank" rel="noreferrer">https://www.apdcolombia.org/el-duelo-y-la-gestion-organizacional/</a></li>
+<li>Castillo Gutiérrez, C. (2020, 26 de octubre). Las seis fases del duelo en entornos organizacionales. Blog d'Economia i Empresa, Universitat Oberta de Catalunya. <a href="https://blogs.uoc.edu/economia-empresa/es/las-6-fases-del-duelo-en-entornos-organizacionales/" target="_blank" rel="noreferrer">https://blogs.uoc.edu/economia-empresa/es/las-6-fases-del-duelo-en-entornos-organizacionales/</a></li>
+<li>Consejería de Sanidad. (2009). Guía de duelo adulto para profesionales socio-sanitarios. Comunidad de Madrid. <a href="https://fundacionmlc.org/wp-content/uploads/2020/03/Guia-Duelo-Adulto-FMLC.pdf" target="_blank" rel="noreferrer">https://fundacionmlc.org/wp-content/uploads/2020/03/Guia-Duelo-Adulto-FMLC.pdf</a></li>
+<li>Fondo de las Naciones Unidas para la Infancia &amp; Fundación Silencio. (2020). Manual sobre el duelo: Manual de capacitación para acompañamiento y abordaje de duelo. UNICEF. <a href="https://www.unicef.org/elsalvador/media/3191/file/Manual%20sobre%20Duelo.pdf" target="_blank" rel="noreferrer">https://www.unicef.org/elsalvador/media/3191/file/Manual%20sobre%20Duelo.pdf</a></li>
+<li>García-Herrera, J. M., &amp; Nogueras Morillas, E. V. (2013). ¿Cómo afrontar el duelo? (Guías de autoayuda para la depresión y los trastornos de ansiedad). Servicio Andaluz de Salud; Consejería de Salud y Bienestar Social; Junta de Andalucía . <a href="http://www.juntadeandalucia.es/servicioandaluzdesalud/saludmental" target="_blank" rel="noreferrer">http://www.juntadeandalucia.es/servicioandaluzdesalud/saludmental</a></li>
+<li>Gayoso, A. (2025, 4 de noviembre). Duelo en la empresa: cómo liderar ante una pérdida (muerte, ERE, jubilación, fusión [Video]. YouTube. <a href="https://www.youtube.com/watch?v=VkRK1vF0yjY" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=VkRK1vF0yjY</a></li>
+<li>Ifeel. (2021, 1 de diciembre). ¿Cómo afrontar el duelo en el entorno laboral? <a href="https://ifeelonline.com/es/salud-laboral/como-afrontar-el-duelo-en-el-entorno-laboral/" target="_blank" rel="noreferrer">https://ifeelonline.com/es/salud-laboral/como-afrontar-el-duelo-en-el-entorno-laboral/</a></li>
+<li>Ministerio del Trabajo &amp; Pontificia Universidad Javeriana. (2016). Situaciones de duelo: Protocolo de actuación en el entorno laboral. Posipedia; Ministerio del Trabajo. <a href="https://posipedia.com.co/wp-content/uploads/2019/08/situaciones-duelo.pdf" target="_blank" rel="noreferrer">https://posipedia.com.co/wp-content/uploads/2019/08/situaciones-duelo.pdf</a></li>
+<li>Seguros SURA. (s.f.). Cómo afrontar el duelo en momentos de crisis. <a href="https://www.segurossura.com.co/documentos/comunicaciones/covid-19/como-afrontar-el-duelo.pdf" target="_blank" rel="noreferrer">https://www.segurossura.com.co/documentos/comunicaciones/covid-19/como-afrontar-el-duelo.pdf</a></li>
+<li>PAHO TV. (2022, 15 de febrero). Ante una perdida significativa: manejo del duelo [Video]. YouTube. <a href="http://www.youtube.com/watch?v=qUGkJr61iG0" target="_blank" rel="noreferrer">http://www.youtube.com/watch?v=qUGkJr61iG0</a></li>
+<li>Pérez, G. (2023, 22 de febrero). Duelo en la oficina | Tanatotip | Gaby Tanatóloga [Video]. YouTube. <a href="http://www.youtube.com/watch?v=K0EbHfiku20" target="_blank" rel="noreferrer">http://www.youtube.com/watch?v=K0EbHfiku20</a></li>
+<li>Politécnico de Suramérica. (2025, 13 de septiembre). Cómo superar la gestión del duelo en el trabajo: claves para el bienestar organizacional. Polisura. <a href="https://www.polisura.edu.co/como-superar-la-gestion-del-duelo-en-el-trabajo-claves-para-el-bienestar-organizacional" target="_blank" rel="noreferrer">https://www.polisura.edu.co/como-superar-la-gestion-del-duelo-en-el-trabajo-claves-para-el-bienestar-organizacional</a></li>
+<li>Rodríguez, E. (2024, 18 de octubre). Duelo Laboral: cómo gestionarlo desde la Psicología y Recursos Humanos [Video]. YouTube. <a href="https://www.youtube.com/watch?v=88CDFbq3gh8" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=88CDFbq3gh8</a></li>
+<li>Sánchez González, M. (2024, 1 de octubre). El duelo: Definición y abordaje terapéutico. Actualidad en Psicología. <a href="https://www.actualidadenpsicologia.com/duelo-definicion-abordaje-terapeutico/" target="_blank" rel="noreferrer">https://www.actualidadenpsicologia.com/duelo-definicion-abordaje-terapeutico/</a></li>
+<li>Somos Estupendas. (2023, 13 de julio). Todo sobre el duelo | Somos Estupendas [Video]. YouTube. <a href="http://www.youtube.com/watch?v=4-WaMxfbD_E" target="_blank" rel="noreferrer">http://www.youtube.com/watch?v=4-WaMxfbD_E</a></li>
+<li>Villegas, A. (2025, 13 de septiembre). Cómo superar la gestión del duelo en el trabajo: Claves para el bienestar organizacional. Politécnico de Suramérica. <a href="https://www.polisura.edu.co/como-superar-la-gestion-del-duelo-en-el-trabajo-claves-para-el-bienestar-organizacional/" target="_blank" rel="noreferrer">https://www.polisura.edu.co/como-superar-la-gestion-del-duelo-en-el-trabajo-claves-para-el-bienestar-organizacional/</a></li>
+<li>Affor Health. (s. f.). Conciliación laboral, doble presencia o interacción casa-trabajo, ¿cómo nos afecta? <a href="https://afforhealth.com/conciliacion-laboral-doble-presencia/" target="_blank" rel="noreferrer">https://afforhealth.com/conciliacion-laboral-doble-presencia/</a></li>
+<li>Garí Pérez, A., Ortiz López, M., Moreno Saenz, N., &amp; Llorens Serrano, C. (2023). NTP 1185: Conflicto trabajo-familia o doble presencia como riesgo psicosocial: Marco conceptual y consecuencias. Instituto Nacional de Seguridad y Salud en el Trabajo (INSST). <a href="https://www.insst.es/documentacion/colecciones-tecnicas/ntp-notas-tecnicas-de-prevencion/36-serie-ntp-numeros-1176-a-1190-ano-2023/ntp-1185-conflicto-trabajo-familia-o-doble-presencia-como-riesgo-psicosocial-marco-conceptual-y-consecuencias-2023#" target="_blank" rel="noreferrer">https://www.insst.es/documentacion/colecciones-tecnicas/ntp-notas-tecnicas-de-prevencion/36-serie-ntp-numeros-1176-a-1190-ano-2023/ntp-1185-conflicto-trabajo-familia-o-doble-presencia-como-riesgo-psicosocial-marco-conceptual-y-consecuencias-2023#</a></li>
+<li>Instituto de Salud Pública de Chile. (2017). Tríptico conciliación trabajo y familia [Folleto]. Ministerio de Salud, Gobierno de Chile. <a href="https://www.ispch.cl/sites/default/files/TripticoConciliacion-04042017A.pdf" target="_blank" rel="noreferrer">https://www.ispch.cl/sites/default/files/TripticoConciliacion-04042017A.pdf</a></li>
+<li>Instituto Sindical de Trabajo, Ambiente y Salud [ISTAS]. (s. f.). ¿Qué es la doble presencia? [Folleto]. Confederación Sindical de Comisiones Obreras (CCOO). <a href="https://istas.net/descargas/Doble%20presencia.pdf" target="_blank" rel="noreferrer">https://istas.net/descargas/Doble%20presencia.pdf</a></li>
+<li>Marquina Peñalver, M. (2000). Doble presencia como factor de riesgo psicosocial (Ficha Divulgativa FD-157). Instituto de Seguridad Laboral de la Región de Murcia. <a href="https://issl.carm.es/wp-content/uploads/fd-157.pdf" target="_blank" rel="noreferrer">https://issl.carm.es/wp-content/uploads/fd-157.pdf</a></li>
+<li>Programa Habilidades para la Vida Andalién Sur. (s.f.). Salud Mental y la Doble Presencia [Video]. <a href="https://www.youtube.com/watch?v=kONndPLaBN8" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=kONndPLaBN8</a></li>
+<li>United Pipeline. (2024, 15 de diciembre). Doble presencia en el trabajo: mensaje navideño del Viejito Pascuero sobre seguridad laboral [Video]. YouTube. <a href="https://www.youtube.com/watch?v=G_T3V6_bELU" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=G_T3V6_bELU</a></li>
+<li>Universidad Santo Tomás. (2022, 12 de junio). Doble presencia [Video]. YouTube. <a href="https://www.youtube.com/watch?v=uuPV_2UNf08" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=uuPV_2UNf08</a></li>
+<li>BBC Mundo. (2017, 29 de septiembre). Qué es el &quot;techo de cristal&quot; y qué situación laboral viven las mujeres en América Latina. <a href="https://www.bbc.com/mundo/media-41436954" target="_blank" rel="noreferrer">https://www.bbc.com/mundo/media-41436954</a></li>
+<li>Ciencias del Derecho. (2024, noviembre 20). ¿Qué significa el término techo de cristal y cómo afecta el ámbito laboral? <a href="https://cienciasdelderecho.com/que-significa-el-termino-techo-de-cristal/" target="_blank" rel="noreferrer">https://cienciasdelderecho.com/que-significa-el-termino-techo-de-cristal/</a></li>
+<li>El Orden Mundial. (s. f.). ¿Qué es el techo de cristal? <a href="https://elordenmundial.com/que-es-techo-cristal/" target="_blank" rel="noreferrer">https://elordenmundial.com/que-es-techo-cristal/</a></li>
+<li>Gil Yepes, J. (2023, 23 de mayo). El techo de cristal. ¿Qué podemos hacer? Aldeas Infantiles SOS Colombia. <a href="https://www.aldeasinfantiles.org.co/noticias/noticias-2023/techo-de-cristal" target="_blank" rel="noreferrer">https://www.aldeasinfantiles.org.co/noticias/noticias-2023/techo-de-cristal</a></li>
+<li>ifeel. (2022, 7 de marzo). Techo de cristal: ¿qué es y cómo romperlo? <a href="https://ifeelonline.com/es/salud-laboral/techo-de-cristal/" target="_blank" rel="noreferrer">https://ifeelonline.com/es/salud-laboral/techo-de-cristal/</a></li>
+<li>OlarteMoure. (2024, 8 de marzo). Infografía | Rompiendo el techo de cristal. <a href="https://olartemoure.com/rompiendo-el-techo-de-cristal/" target="_blank" rel="noreferrer">https://olartemoure.com/rompiendo-el-techo-de-cristal/</a></li>
+<li>Universidad del Valle. (2024, 22 de marzo). Techo de Cristal [Video]. YouTube. <a href="https://www.youtube.com/watch?v=2mkvHl0n3qw" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=2mkvHl0n3qw</a></li>
+<li>Azteca Noticias. (2014, 13 de mayo). ¿Qué es el presentismo laboral? | Noticias [Video]. YouTube. <a href="http://www.youtube.com/watch?v=13C9xrUVx9M" target="_blank" rel="noreferrer">http://www.youtube.com/watch?v=13C9xrUVx9M</a></li>
+<li>High Speed Training. (2024, 18 de abril). Presenteeism in the workplace: What it is and how to reduce it. <a href="https://www.highspeedtraining.co.uk/hub/presenteeism-in-the-workplace/" target="_blank" rel="noreferrer">https://www.highspeedtraining.co.uk/hub/presenteeism-in-the-workplace/</a></li>
+<li>ifeel. (s. f.). Presentismo laboral: qué es, causas y cómo afecta a las empresas. <a href="https://ifeelonline.com/es/salud-laboral/presentismo-laboral/" target="_blank" rel="noreferrer">https://ifeelonline.com/es/salud-laboral/presentismo-laboral/</a></li>
+<li>Personio. (s. f.). Presentismo laboral: qué es, causas y cómo evitarlo. <a href="https://www.personio.es/glosario/presentismo-laboral/" target="_blank" rel="noreferrer">https://www.personio.es/glosario/presentismo-laboral/</a></li>
+<li>Pladevall, X. (s. f.). ¿Qué es el presentismo laboral y cómo afecta a las empresas? Acció Preventiva. <a href="https://www.acciopreventiva.com/que-es-presentismo-laboral/" target="_blank" rel="noreferrer">https://www.acciopreventiva.com/que-es-presentismo-laboral/</a></li>
+<li>Portafolio. (2021, 25 de octubre). ‘Presentismo’ laboral, una amenaza invisible que afecta a las empresas. <a href="https://www.portafolio.co/tendencias/presentismo-laboral-una-amenaza-invisible-que-afecta-a-las-empresas-557758" target="_blank" rel="noreferrer">https://www.portafolio.co/tendencias/presentismo-laboral-una-amenaza-invisible-que-afecta-a-las-empresas-557758</a></li>
+<li>Teletica Costa Rica. (2025, 7 de mayo). “Presentismo laboral: el enemigo silencioso de la productividad” [Video]. YouTube. <a href="http://www.youtube.com/watch?v=vzImVSJZA3s" target="_blank" rel="noreferrer">http://www.youtube.com/watch?v=vzImVSJZA3s</a></li>
+<li>Federación de Enseñanza de USO (FEUSO). (s. f.). Salud laboral (Boletín n.º 437). <a href="https://feuso.es/images/docs/boletines/FEUSO_SALUD_LABORAL437.pdf" target="_blank" rel="noreferrer">https://feuso.es/images/docs/boletines/FEUSO_SALUD_LABORAL437.pdf</a></li>
+<li>FUNIBER. (2024, 3 de diciembre). Boreout: el peligroso síndrome del aburrimiento en el trabajo. <a href="https://www.funiber.blog/direccion-empresarial/2024/12/03/boreout-el-peligroso-sindrome-del-aburrimiento-en-el-trabajo" target="_blank" rel="noreferrer">https://www.funiber.blog/direccion-empresarial/2024/12/03/boreout-el-peligroso-sindrome-del-aburrimiento-en-el-trabajo</a></li>
+<li>Persona Común. (2021, 26 de febrero). Mi trabajo me aburre ¿Por qué? - Síndrome del Boreout [Video]. YouTube. <a href="https://www.youtube.com/watch?v=WsxKExNXqe4" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=WsxKExNXqe4</a></li>
+<li>Taprega. (2025, 25 de febrero). Síndrome de Boreout: Cómo el aburrimiento laboral arruina tu vida y qué hacer para superarlo [Video]. YouTube. <a href="https://www.youtube.com/watch?v=xlPBWICOolA" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=xlPBWICOolA</a></li>
+<li>Unión General de Trabajadoras y Trabajadores (UGT). (s. f.). Fichas del Observatorio (Ficha nº 19). <a href="https://www.ugt.es/sites/default/files/node_gallery/Galer-a%20Publicaciones/FichasObservatorio%20%28%29%2019.pdf" target="_blank" rel="noreferrer">https://www.ugt.es/sites/default/files/node_gallery/Galer-a%20Publicaciones/FichasObservatorio%20%28%29%2019.pdf</a></li>
+<li>Universidad César Vallejo. (2024, 28 de agosto). Síndrome de boreout: la amenaza silenciosa para la salud mental de los talentos. <a href="https://www.ucv.edu.pe/noticias/sindrome-de-boreout" target="_blank" rel="noreferrer">https://www.ucv.edu.pe/noticias/sindrome-de-boreout</a></li>
+<li>Contigo en el Recuerdo. (2021, 23 de noviembre). Cómo enfrentarse a la culpa del sobreviviente [Video]. YouTube. <a href="https://www.youtube.com/watch?v=MyrRXBqULpU" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=MyrRXBqULpU</a></li>
+<li>Davis, S. (2021, junio 16). Workplace survivor syndrome. OpenLearn, The Open University. <a href="https://www.open.edu/openlearn/health-sports-psychology/psychology/workplace-survivor-syndrome" target="_blank" rel="noreferrer">https://www.open.edu/openlearn/health-sports-psychology/psychology/workplace-survivor-syndrome</a></li>
+<li>Hogg, C. (2026, enero 21). How to support teams through workplace survivor syndrome. Lattice. <a href="https://lattice.com/articles/workplace-survivor-syndrome-what-it-is-and-how-to-cope" target="_blank" rel="noreferrer">https://lattice.com/articles/workplace-survivor-syndrome-what-it-is-and-how-to-cope</a></li>
+<li>Maynard, J. (2024, febrero 22). Understanding workplace survival syndrome and mental health amid layoffs. Spring Health. <a href="https://www.springhealth.com/blog/workplace-survival-syndrome" target="_blank" rel="noreferrer">https://www.springhealth.com/blog/workplace-survival-syndrome</a></li>
+<li>MetaContratas. (s. f.). Downsizing y el síndrome del superviviente. MetaContratas. <a href="https://www.metacontratas.com/downsizing-y-el-sindrome-del-superviviente/" target="_blank" rel="noreferrer">https://www.metacontratas.com/downsizing-y-el-sindrome-del-superviviente/</a></li>
+<li>Morgan, S. (s. f.). Understanding survivor syndrome. Museums Association. <a href="https://www.museumsassociation.org/careers/redundancy-hub/understanding-survivor-syndrome/" target="_blank" rel="noreferrer">https://www.museumsassociation.org/careers/redundancy-hub/understanding-survivor-syndrome/</a></li>
+<li>PsicoActiva. (2020, 24 de marzo). El Síndrome del Superviviente [Video]. YouTube. <a href="https://www.youtube.com/watch?v=peNnxeMxkF4" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=peNnxeMxkF4</a></li>
+<li>CinfaSalud. (2019, 29 de marzo). ¿Qué es el tecnoestrés y cómo afecta a tu salud? CinfaSalud te da las claves para superarlo [Video]. YouTube. <a href="http://www.youtube.com/watch?v=NbgUSy6ozgU" target="_blank" rel="noreferrer">http://www.youtube.com/watch?v=NbgUSy6ozgU</a></li>
+<li>Colegio Colombiano de Psicólogos (COLPSIC). (2021). Guía para la gestión del tecnoestrés. <a href="https://www.colpsic.org.co/wp-content/uploads/2021/04/Guia-para-la-gestion-del-tecnoestres.pdf" target="_blank" rel="noreferrer">https://www.colpsic.org.co/wp-content/uploads/2021/04/Guia-para-la-gestion-del-tecnoestres.pdf</a></li>
+<li>Noticias Caracol. (2018, 23 de mayo). ¿Qué es el tecnoestrés? [Video]. YouTube. <a href="http://www.youtube.com/watch?v=GvNnMAXL1CE" target="_blank" rel="noreferrer">http://www.youtube.com/watch?v=GvNnMAXL1CE</a></li>
+<li>Proyecto Hombre Madrid. (2024, 24 de noviembre). Tecnoestrés en el entorno laboral, ¿qué es? <a href="https://www.proyectohombremadrid.org/tecnoestres-en-el-entorno-laboral-que-es/" target="_blank" rel="noreferrer">https://www.proyectohombremadrid.org/tecnoestres-en-el-entorno-laboral-que-es/</a></li>
+<li>Salanova, M., Llorens, S., Cifre, E., &amp; Nogareda, C. (2004). NTP 730: Tecnoestrés: concepto, medida e intervención psicosocial (Nota Técnica de Prevención 730). Instituto Nacional de Seguridad e Higiene en el Trabajo (INSHT). <a href="https://www.insst.es/documents/94886/196283/NTP+730+Tecnoestr%C3%A9s.+concepto%2C+medida+e+intervenci%C3%B3n+psicosocial.pdf" target="_blank" rel="noreferrer">https://www.insst.es/documents/94886/196283/NTP+730+Tecnoestr%C3%A9s.+concepto%2C+medida+e+intervenci%C3%B3n+psicosocial.pdf</a></li>
+<li>Universidad Internacional de La Rioja (UNIR). (s. f.). Tecnoestrés: qué es, causas, consecuencias y cómo prevenirlo. UNIR México</li>
+<li>Bienconecta. (2025, 3 de junio). Cómo prevenir el tecnoestrés en la empresa: estrategias para RRHH y managers. <a href="https://www.bienconecta.com/como-prevenir-el-tecnoestres-en-la-empresa/" target="_blank" rel="noreferrer">https://www.bienconecta.com/como-prevenir-el-tecnoestres-en-la-empresa/</a></li></ul>
       </section>
     </main>
 
@@ -504,7 +183,6 @@
       <p>PsicoWiki - Riesgos Psicosociales en el Entorno Laboral</p>
       <a href="#inicio">Volver al inicio</a>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
