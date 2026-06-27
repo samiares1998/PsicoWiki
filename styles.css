@@ -573,3 +573,26 @@ body:has(.page-shell) footer {
     gap: 8px;
   }
 }
+
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  background: var(--surface);
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid var(--line);
+  padding: 14px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.comparison-table th {
+  background: #dce3f5;
+  color: var(--text);
+  font-weight: 700;
+  text-align: center;
+}
