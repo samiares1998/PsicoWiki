@@ -11,28 +11,29 @@ const topics = [
     title: "Mobbing",
     label: "Mobbing o acoso laboral",
     summary:
-      "Conductas persistentes de hostigamiento, intimidacion o degradacion que afectan la dignidad y la salud de la persona trabajadora.",
+      "Conductas persistentes de hostigamiento, intimidación o degradación que afectan la dignidad y la salud de la persona trabajadora.",
   },
   {
     key: "burnout",
     title: "Burnout",
-    label: "Burnout o sindrome de desgaste laboral",
+    label: "Burnout o síndrome de desgaste laboral",
+    image: "../assets/images/burnout.jpg",
     summary:
-      "Cronificacion del estres laboral que se expresa en agotamiento fisico, mental y emocional, perdida de interes y deterioro del desempeno.",
+      "Cronificación del estrés laboral que se expresa en agotamiento físico, mental y emocional, pérdida de interés y deterioro del desempeño.",
   },
   {
     key: "duelo",
     title: "duelo",
     label: "Duelo organizacional",
     summary:
-      "Proceso emocional individual y colectivo frente a perdidas significativas dentro de la organizacion.",
+      "Proceso emocional individual y colectivo frente a pérdidas significativas dentro de la organización.",
   },
   {
     key: "doble-presencia",
     title: "Doble presencia",
     label: "Doble presencia",
     summary:
-      "Necesidad de responder simultaneamente a las demandas del trabajo remunerado y del ambito domestico-familiar.",
+      "Necesidad de responder simultáneamente a las demandas del trabajo remunerado y del ámbito doméstico-familiar.",
   },
   {
     key: "techo-cristal",
@@ -46,28 +47,28 @@ const topics = [
     title: "Presentismo",
     label: "Presentismo laboral",
     summary:
-      "Presencia fisica en el trabajo con baja productividad real por enfermedad, agotamiento, desmotivacion o cultura de permanencia.",
+      "Presencia física en el trabajo con baja productividad real por enfermedad, agotamiento, desmotivación o cultura de permanencia.",
   },
   {
     key: "boreout",
     title: "Boreout",
     label: "Boreout o aburrimiento laboral",
     summary:
-      "Aburrimiento cronico, infraexigencia y desinteres derivados de tareas poco estimulantes o carentes de sentido.",
+      "Aburrimiento crónico, infraexigencia y desinterés derivados de tareas poco estimulantes o carentes de sentido.",
   },
   {
     key: "sindrome-superviviente",
     title: "Síndrome del superviviente",
-    label: "Sindrome del superviviente",
+    label: "Síndrome del superviviente",
     summary:
-      "Impacto psicologico en quienes permanecen despues de despidos, reducciones de personal o perdidas organizacionales.",
+      "Impacto psicológico en quienes permanecen después de despidos, reducciones de personal o pérdidas organizacionales.",
   },
   {
     key: "tecnoestres",
     title: "Tecnoestrés",
-    label: "Tecnoestres",
+    label: "Tecnoestrés",
     summary:
-      "Efectos psicosociales negativos asociados al uso intensivo, complejo o invasivo de tecnologias digitales.",
+      "Efectos psicosociales negativos asociados al uso intensivo, complejo o invasivo de tecnologías digitales.",
   },
 ];
 
@@ -123,12 +124,12 @@ function extractSections() {
 }
 
 const headingMap = new Map([
-  ["definición", "Definicion"],
-  ["definicion", "Definicion"],
-  ["definición y concepto", "Definicion y concepto"],
-  ["definicion y concepto", "Definicion y concepto"],
-  ["características", "Caracteristicas"],
-  ["caracteristicas", "Caracteristicas"],
+  ["definición", "Definición"],
+  ["definicion", "Definición"],
+  ["definición y concepto", "Definición y concepto"],
+  ["definicion y concepto", "Definición y concepto"],
+  ["características", "Características"],
+  ["caracteristicas", "Características"],
   ["causas", "Causas"],
   ["causas del presentismo laboral", "Causas"],
   ["causas del tecnoestrés", "Causas"],
@@ -137,21 +138,139 @@ const headingMap = new Map([
   ["consecuencias del presentismo", "Consecuencias"],
   ["consecuencias del tecnoestrés", "Consecuencias"],
   ["consecuencias del tecnoestres", "Consecuencias"],
-  ["prevención y recomendaciones", "Prevencion y recomendaciones"],
-  ["prevencion y recomendaciones", "Prevencion y recomendaciones"],
-  ["mecanismos de prevención en el contexto organizacional", "Mecanismos de prevencion organizacional"],
-  ["mecanismos de prevencion en el contexto organizacional", "Mecanismos de prevencion organizacional"],
+  ["prevención y recomendaciones", "Prevención y recomendaciones"],
+  ["prevencion y recomendaciones", "Prevención y recomendaciones"],
+  ["mecanismos de prevención en el contexto organizacional", "Mecanismos de prevención organizacional"],
+  ["mecanismos de prevencion en el contexto organizacional", "Mecanismos de prevención organizacional"],
+  ["señales y manifestaciones comunes", "Señales y manifestaciones comunes"],
+  ["senales y manifestaciones comunes", "Señales y manifestaciones comunes"],
+  ["conductas de acoso vs. conductas legítimas", "Conductas de acoso vs. conductas legítimas"],
+  ["conductas de acoso vs. conductas legitimas", "Conductas de acoso vs. conductas legítimas"],
+  ["atención y protección frente al acoso laboral", "Atención y protección frente al acoso laboral"],
+  ["atencion y proteccion frente al acoso laboral", "Atención y protección frente al acoso laboral"],
+  ["duelo normal vs. duelo patológico", "Duelo normal vs. duelo patológico"],
+  ["duelo normal vs. duelo patologico", "Duelo normal vs. duelo patológico"],
+  ["tipos de duelos en la organización", "Tipos de duelos en la organización"],
+  ["tipos de duelos en la organizacion", "Tipos de duelos en la organización"],
+  ["mitos y realidades del duelo", "Mitos y realidades del duelo"],
+  ["componentes y etapas", "Componentes y etapas"],
+  ["instrumento de evaluación", "Instrumento de evaluación"],
+  ["instrumento de evaluacion", "Instrumento de evaluación"],
+  ["recomendaciones para el liderazgo y la gestión del duelo organizacional", "Recomendaciones para el liderazgo y la gestión del duelo organizacional"],
+  ["recomendaciones para el liderazgo y la gestion del duelo organizacional", "Recomendaciones para el liderazgo y la gestión del duelo organizacional"],
+  ["beneficios para la organización", "Beneficios para la organización"],
+  ["beneficios para la organizacion", "Beneficios para la organización"],
+  ["síntomas en el trabajador", "Síntomas en el trabajador"],
+  ["sintomas en el trabajador", "Síntomas en el trabajador"],
+  ["señales organizacionales de alerta", "Señales organizacionales de alerta"],
+  ["senales organizacionales de alerta", "Señales organizacionales de alerta"],
+  ["el downsizing o reducción de plantilla.", "El downsizing o reducción de plantilla"],
+  ["el downsizing o reduccion de plantilla.", "El downsizing o reducción de plantilla"],
   ["material de apoyo (videos)", "Material de apoyo"],
   ["material de apoyo ( videos )", "Material de apoyo"],
   ["material de apoyo ( video )", "Material de apoyo"],
-  ["referencias bibliográficas", "Referencias bibliograficas"],
-  ["referencia bibliográficas", "Referencias bibliograficas"],
-  ["referencia bibliograficas", "Referencias bibliograficas"],
+  ["referencias bibliográficas", "Referencias bibliográficas"],
+  ["referencias bibliograficas", "Referencias bibliográficas"],
+  ["referencia bibliográficas", "Referencias bibliográficas"],
+  ["referencia bibliograficas", "Referencias bibliográficas"],
+]);
+
+const subheadingSet = new Set([
+  "protección a las víctimas",
+  "proteccion a las victimas",
+  "política y cultura de prevención",
+  "politica y cultura de prevencion",
+  "gestión del riesgo psicosocial",
+  "gestion del riesgo psicosocial",
+  "sensibilización y capacitación",
+  "sensibilizacion y capacitacion",
+  "papel del comité de convivencia laboral",
+  "papel del comite de convivencia laboral",
+  "del estrés al burnout",
+  "del estres al burnout",
+  "impacto en la salud física y mental",
+  "impacto en la salud fisica y mental",
+  "consecuencias en el desempeño laboral",
+  "impacto en el clima y comportamiento",
+  "el entorno laboral y los factores psicosociales",
+  "prevención y autocuidado",
+  "prevencion y autocuidado",
+  "gestión emocional y cognitiva",
+  "gestion emocional y cognitiva",
+  "prevención primaria",
+  "prevencion primaria",
+  "prevención secundaria",
+  "prevencion secundaria",
+  "hábitos de bienestar",
+  "habitos de bienestar",
+  "intervenciones y estrategias de afrontamiento",
+  "técnicas de relajación",
+  "tecnicas de relajacion",
+  "intervención psicológica",
+  "intervencion psicologica",
+  "intervención psicosocial",
+  "intervencion psicosocial",
+  "medidas de prevención organizacional",
+  "medidas de prevencion organizacional",
+  "manifestaciones del duelo",
+  "estrategias de autocuidado y afrontamiento del duelo",
+  "pautas de autocuidado",
+  "estrategias para el afrontamiento del duelo",
+  "intervención y apoyo profesional",
+  "intervencion y apoyo profesional",
+  "organización del trabajo y conciliación laboral",
+  "organizacion del trabajo y conciliacion laboral",
+  "cultura organizacional y corresponsabilidad",
+  "estrategias de prevención social y familiar",
+  "estrategias de prevencion social y familiar",
+  "el sesgo como causa",
+  "impacto individual y en la salud mental de los trabajadores",
+  "consecuencias organizacionales",
+  "impacto económico",
+  "impacto economico",
+  "programas de mentoría",
+  "programas de mentoria",
+  "políticas de diversidad e inclusión robustas",
+  "politicas de diversidad e inclusion robustas",
+  "capacitación en sesgos cognitivos",
+  "capacitacion en sesgos cognitivos",
+  "flexibilidad laboral y apoyo a la conciliación",
+  "flexibilidad laboral y apoyo a la conciliacion",
+  "transparencia salarial y equidad en la remuneración",
+  "transparencia salarial y equidad en la remuneracion",
+  "desarrollo de liderazgo inclusivo",
+  "creación de redes de apoyo y comunidades de empleados",
+  "creacion de redes de apoyo y comunidades de empleados",
+  "medición y rendición de cuentas",
+  "medicion y rendicion de cuentas",
+  "factores organizacionales",
+  "prevención organizacional",
+  "prevencion organizacional",
+  "estrategias de autocuidado individual",
+  "impacto en el desempeño laboral",
+  "impacto en la percepción y experiencia laboral",
+  "impacto en la percepcion y experiencia laboral",
+  "impacto en el vínculo con la organización",
+  "impacto en el vinculo con la organizacion",
+  "síntomas individuales sutiles",
+  "sintomas individuales sutiles",
+  "cambios en la dinámica de equipo",
+  "cambios en la dinamica de equipo",
+  "impacto organizacional visible",
+  "paso 1. realizar un diagnóstico del estado digital del equipo",
+  "paso 1. realizar un diagnostico del estado digital del equipo",
+  "paso 2. diseñar una política clara de desconexión digital",
+  "paso 2. disenar una politica clara de desconexion digital",
+  "paso 3. reducir el ruido digital",
+  "paso 4. capacitar en competencias digitales y gestión del foco",
+  "paso 4. capacitar en competencias digitales y gestion del foco",
+  "paso 5. reforzar el papel del liderazgo consciente",
 ]);
 
 function normalizeHeading(line) {
   const normalized = line
     .trim()
+    .replace(/^\d+[.)]\s*/, "")
     .replace(/\s+/g, " ")
     .replace(/:$/, "")
     .toLowerCase();
@@ -211,13 +330,14 @@ function extractGroupedReferences(sections) {
   return referenceMap;
 }
 
-function renderLines(lines) {
+function renderLines(lines, options = {}) {
+  const emphasizeLabels = options.emphasizeLabels !== false;
   const html = [];
   let list = [];
 
   function flushList() {
     if (!list.length) return;
-    html.push(`<ul>${list.map((item) => `<li>${renderInline(item)}</li>`).join("")}</ul>`);
+    html.push(`<ul>${list.map((item) => `<li>${renderInline(item, { emphasizeLabels })}</li>`).join("")}</ul>`);
     list = [];
   }
 
@@ -225,6 +345,7 @@ function renderLines(lines) {
     const urlOnly = line.match(/^https?:\/\/\S+$/);
     const bullet = line.match(/^(?:[-•]|\d+[.)])\s*(.+)$/);
     const labelValue = line.match(/^([^:]{3,80}):\s+(.+)$/);
+    const subheading = normalizeSubheading(line);
 
     if (urlOnly) {
       flushList();
@@ -232,14 +353,21 @@ function renderLines(lines) {
       const id = youtubeId(url);
       const label = id ? `${linkLabel(url)} (${id})` : linkLabel(url);
       html.push(`<a class="resource-link" href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a>`);
+    } else if (subheading) {
+      flushList();
+      html.push(`<h3>${escapeHtml(subheading)}</h3>`);
     } else if (bullet) {
       list.push(bullet[1]);
     } else if (labelValue && line.length < 240) {
       flushList();
-      html.push(`<p><strong>${escapeHtml(labelValue[1])}:</strong> ${renderInline(labelValue[2])}</p>`);
+      if (emphasizeLabels) {
+        html.push(`<p><strong>${escapeHtml(labelValue[1])}:</strong> ${renderInline(labelValue[2], { emphasizeLabels })}</p>`);
+      } else {
+        html.push(`<p>${renderInline(line, { emphasizeLabels: false })}</p>`);
+      }
     } else {
       flushList();
-      html.push(`<p>${renderInline(line)}</p>`);
+      html.push(`<p>${renderInline(line, { emphasizeLabels })}</p>`);
     }
   }
 
@@ -247,13 +375,40 @@ function renderLines(lines) {
   return html.join("\n");
 }
 
-function renderInline(line) {
-  const escaped = escapeHtml(line);
-  return escaped.replace(/(https?:\/\/[^\s]+)/g, (url) => {
+function renderInline(line, options = {}) {
+  const escaped = escapeHtml(cleanText(line));
+  const linked = escaped.replace(/(https?:\/\/[^\s]+)/g, (url) => {
     const clean = url.replace(/[),.]+$/, "");
     const suffix = url.slice(clean.length);
     return `<a href="${clean}" target="_blank" rel="noreferrer">${clean}</a>${escapeHtml(suffix)}`;
   });
+  if (options.emphasizeLabels === false) return linked;
+  return linked.replace(/^([^:<]{2,80}:)(\s+)/, "<strong>$1</strong>$2");
+}
+
+function cleanText(line) {
+  return line
+    .replace(/\bperdida significativa\b/g, "pérdida significativa")
+    .replace(/\bperdidas significativas\b/g, "pérdidas significativas")
+    .replace(/\besterotipos\b/gi, "estereotipos")
+    .replace(/\bconstruído\b/gi, "construido")
+    .replace(/\bs\.f\./g, "s. f.");
+}
+
+function normalizeSubheading(line) {
+  const clean = line
+    .trim()
+    .replace(/^[-•]\s*/, "")
+    .replace(/^\d+[.)]\s*/, "")
+    .replace(/:$/, "")
+    .replace(/\s*\([^)]*\)\s*$/, "")
+    .replace(/\s+/g, " ");
+  const normalized = clean
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+  if (!subheadingSet.has(normalized)) return "";
+  return clean.charAt(0).toUpperCase() + clean.slice(1);
 }
 
 function layout({ title, body, activeKey = "", description = "" }) {
@@ -312,8 +467,8 @@ function layout({ title, body, activeKey = "", description = "" }) {
 function renderTopicPage(topic, groupedReferences) {
   const sections = parseTopic(topic.raw, topic.title);
   const extraReferences = groupedReferences.get(topic.key);
-  if (extraReferences?.length && !sections.some((section) => section.title === "Referencias bibliograficas")) {
-    sections.push({ title: "Referencias bibliograficas", lines: extraReferences });
+  if (extraReferences?.length && !sections.some((section) => section.title === "Referencias bibliográficas")) {
+    sections.push({ title: "Referencias bibliográficas", lines: extraReferences });
   }
   const toc = sections
     .map((section) => `<a href="#${slugify(section.title)}">${escapeHtml(section.title)}</a>`)
@@ -322,10 +477,15 @@ function renderTopicPage(topic, groupedReferences) {
     .map(
       (section) => `<section class="article-section" id="${slugify(section.title)}">
         <h2>${escapeHtml(section.title)}</h2>
-        ${renderLines(section.lines)}
+        ${renderLines(section.lines, { emphasizeLabels: section.title !== "Referencias bibliográficas" })}
       </section>`,
     )
     .join("\n");
+  const image = topic.image
+    ? `<figure class="topic-image">
+          <img src="${escapeHtml(topic.image)}" alt="${escapeHtml(topic.label)}" />
+        </figure>`
+    : "";
 
   const body = `<article class="topic-page">
         <nav class="breadcrumb" aria-label="Ruta"><a href="../index.html">Inicio</a><span>/</span><span>${escapeHtml(topic.label)}</span></nav>
@@ -334,9 +494,10 @@ function renderTopicPage(topic, groupedReferences) {
           <h1>${escapeHtml(topic.label)}</h1>
           <p>${escapeHtml(topic.summary)}</p>
         </section>
-        <section class="article-toc" aria-label="Contenido de la pagina">
+        <section class="article-toc" aria-label="Contenido de la página">
           ${toc}
         </section>
+        ${image}
         ${content}
       </article>`;
 
@@ -361,11 +522,11 @@ function renderHome(sections, groupedReferences) {
   const bibliography = sections
     .flatMap((topic) =>
       parseTopic(topic.raw, topic.title)
-        .filter((section) => section.title === "Referencias bibliograficas")
+        .filter((section) => section.title === "Referencias bibliográficas")
         .flatMap((section) => section.lines),
     )
     .concat([...groupedReferences.values()].flat())
-    .map((line) => `<li>${renderInline(line)}</li>`)
+    .map((line) => `<li>${renderInline(line, { emphasizeLabels: false })}</li>`)
     .join("\n");
 
   return `<!doctype html>
@@ -401,7 +562,7 @@ function renderHome(sections, groupedReferences) {
           <h1>Riesgos Psicosociales en el Entorno Laboral</h1>
           <p>
             Un portal para comprender, prevenir y gestionar factores psicosociales que afectan la
-            salud mental, el bienestar y el desempeno de las personas trabajadoras.
+            salud mental, el bienestar y el desempeño de las personas trabajadoras.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#temas">Explorar temas</a>
@@ -413,7 +574,7 @@ function renderHome(sections, groupedReferences) {
       <section class="section intro" id="temas">
         <p class="eyebrow">Mapa de la wiki</p>
         <h2>Temas principales</h2>
-        <p>Selecciona un tema para abrir su pagina con definicion, causas, consecuencias, recomendaciones, recursos y referencias.</p>
+        <p>Selecciona un tema para abrir su página con definición, causas, consecuencias, recomendaciones, recursos y referencias.</p>
         <div class="topic-grid">
           ${cards}
         </div>
@@ -423,7 +584,7 @@ function renderHome(sections, groupedReferences) {
         <p class="eyebrow">Navegacion</p>
         <h2>Como usar esta wiki</h2>
         <div class="resource-grid">
-          <div><h3>1. Elige un tema</h3><p>Cada tarjeta abre una pagina independiente con contenido completo.</p></div>
+          <div><h3>1. Elige un tema</h3><p>Cada tarjeta abre una página independiente con contenido completo.</p></div>
           <div><h3>2. Revisa recursos</h3><p>Los videos y documentos se abren como enlaces externos para evitar errores de reproductor.</p></div>
           <div><h3>3. Consulta fuentes</h3><p>La bibliografia general reune las referencias importadas desde el archivo base.</p></div>
         </div>

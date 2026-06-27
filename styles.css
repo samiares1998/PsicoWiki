@@ -335,6 +335,24 @@ h3 {
   font-weight: 800;
 }
 
+.topic-image {
+  margin: 22px 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.topic-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+}
+
 .article-section {
   margin: 22px 0;
   padding: 32px;
@@ -351,6 +369,22 @@ h3 {
   font-size: clamp(1.45rem, 2.5vw, 2.2rem);
 }
 
+.article-section h3 {
+  display: inline-block;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+.article-section strong {
+  color: var(--ink);
+  font-weight: 900;
+}
+
 .article-section p,
 .article-section li,
 .bibliography li,
@@ -360,6 +394,10 @@ h3 {
 
 .article-section ul {
   padding-left: 22px;
+}
+
+.article-section li + li {
+  margin-top: 6px;
 }
 
 .resource-link {
