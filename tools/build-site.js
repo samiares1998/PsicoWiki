@@ -4,6 +4,7 @@ const path = require("path");
 const root = path.resolve(__dirname, "..");
 const sourcePath = "/Users/sami.arevalo/Desktop/info.txt";
 const source = fs.readFileSync(sourcePath, "utf8").replace(/\r\n/g, "\n");
+const cacheVersion = process.env.CACHE_VERSION || new Date().toISOString().replace(/\D/g, "").slice(0, 14);
 
 const topics = [
   {
@@ -102,6 +103,10 @@ function linkLabel(url) {
   } catch {
     return "Abrir recurso externo";
   }
+}
+
+function versionedAsset(assetPath) {
+  return `${assetPath}?v=${cacheVersion}`;
 }
 
 function extractSections() {
@@ -426,8 +431,8 @@ function layout({ title, body, activeKey = "", description = "" }) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="${escapeHtml(description || title)}" />
     <title>${escapeHtml(title)} | PsicoWiki</title>
-    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" href="${versionedAsset("../favicon.svg")}" type="image/svg+xml" />
+    <link rel="stylesheet" href="${versionedAsset("../styles.css")}" />
   </head>
   <body>
     <header class="site-header">
@@ -458,7 +463,7 @@ function layout({ title, body, activeKey = "", description = "" }) {
       <p>PsicoWiki - Riesgos Psicosociales en el Entorno Laboral</p>
       <a href="../index.html">Volver al inicio</a>
     </footer>
-    <script src="../script.js"></script>
+    <script src="${versionedAsset("../script.js")}"></script>
   </body>
 </html>
 `;
@@ -536,8 +541,8 @@ function renderHome(sections, groupedReferences) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Wiki sobre riesgos psicosociales en el entorno laboral." />
     <title>PsicoWiki | Riesgos Psicosociales en el Entorno Laboral</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="${versionedAsset("favicon.svg")}" type="image/svg+xml" />
+    <link rel="stylesheet" href="${versionedAsset("styles.css")}" />
   </head>
   <body>
     <header class="site-header">
@@ -601,7 +606,7 @@ function renderHome(sections, groupedReferences) {
       <p>PsicoWiki - Riesgos Psicosociales en el Entorno Laboral</p>
       <a href="#inicio">Volver al inicio</a>
     </footer>
-    <script src="script.js"></script>
+    <script src="${versionedAsset("script.js")}"></script>
   </body>
 </html>
 `;
